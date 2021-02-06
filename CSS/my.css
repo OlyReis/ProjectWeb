@@ -1,0 +1,221 @@
+.navbar{
+  background-color: red;
+}
+body{
+  margin: 100px 20% 0 15%; 
+}
+.btnADM {
+  background-color: #A90808;
+  height: 40px; 
+  width: 180px; 
+  font-size: 16px;
+}
+
+.darkmode--activated p, .darkmode--activated h1, .darkmode--activated h2, .darkmode--activated h3, .darkmode--activated h4, 
+.darkmode--activated h5, .darkmode--activated tr, .darkmode--activated th, .darkmode--activated td {
+  color: white;
+}
+.darkmode--activated label, .darkmode--activated .input {
+  color: white;
+}
+.note-editable p{
+  color: #212529;
+}
+label {
+  color: black;
+}
+
+.input {
+  border-color: grey;
+  border-width: 0 0 2px;
+  outline: none;
+  background-color: white;
+}
+.input:focus {
+  border-color: DodgerBlue;
+  background-color: white;
+  box-shadow: none;
+}
+
+.textarea {
+  border-color: grey;
+  border-width: 2px;
+  outline: none;
+  background-color: black;
+}
+.textarea:focus {
+  border-color: DodgerBlue;
+  background-color: black;
+  box-shadow: none;
+}
+
+.darkmode--activated .divlogin, .darkmode--activated .divcadastro, .darkmode--activated, .vertical-nav, #criarConta,
+.darkmode--activated .input, .darkmode--activated .input:focus, .darkmode--activated .input:hover, .darkmode--activated #textarea{
+  background-color: black;
+}
+
+.divlogin {
+  background-color: white;
+  width: 50%;
+}
+.divcadastro {
+  background-color: white;
+  width: 100%;
+}
+
+.darkmode--activated .logintext {
+  color: black;
+}
+
+.logintext {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  isolation: isolate;
+}
+
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
+}
+.card{
+	background-color: #A90808;
+}
+
+.card-title h5 .card-text p  {
+	color: red;
+}
+
+.divProduto {
+  border: none;
+}
+
+thead {
+  background-color: #A90808;
+}
+
+th {
+  width: 50%;
+}
+
+#criarConta {
+  background-color: white;
+}
+
+.darkmode--activated #criarConta{
+  background-color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: grey;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+div.ui-datepicker {
+  width: 312px; /*what ever width you want*/
+}
+
+.ui-datepicker-trigger {
+  width: 25px;
+  height: 25px;
+  top: 44%;
+  left: 85%;
+  position: absolute;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#datainvalida2, #senhainvalida, #senhainvalida2,
+#senhaconfirmainvalida, #senhaconfirmainvalida2 {
+  color: #dc3545;
+}
+
+.img-produto{
+ -webkit-transition: -webkit-transform .5s ease;
+ transition: transform .5s ease;
+
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-produto:hover{
+ -webkit-transform: scale(1.1);
+ transform: scale(1.6);
+}
+
+.numItensCarrinho {
+  position: fixed;
+  margin-left: -13px;
+  line-height: 1rem;
+  height: 1rem;
+  width: 1rem;
+  -webkit-border-radius: 1rem;
+  border-radius: 3rem;
+  background-color: blue;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  z-index: 1;
+  text-align: center;
+}
+
+.divProdutoCarrinho {
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.darkmode--activated .divProdutoCarrinho {
+  box-shadow: 6px 6px 5px 0px rgba(255,255,255,0.75);
+}
+
+.divResumoCarrinho {
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.darkmode--activated .divResumoCarrinho {
+  box-shadow: 6px 6px 5px 0px rgba(255,255,255,0.75);
+}
+
+#menosQtd, #maisQtd {
+  cursor: pointer;
+}
+
+.desabilitado:disabled, .desabilitado:disabled:hover, .desabilitado:disabled:focus {
+  background-color: #343434;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.btnVerMais {
+  background-color: #A90808;
+  border-color: #A90808;
+}
+
+.btnVerMais a {
+  color: white;
+  font-weight: bold;
+}
+
+.darkmode--activated #tituloProduto {
+  color: yellow;
+}
