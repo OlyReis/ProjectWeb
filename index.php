@@ -21,7 +21,7 @@
 			</div>
 			<div class="form-group">
 				<label form="labelFoto">Foto do concorrente</label>
-				<input type="file" class="form-control-file input" name="foto" id="foto1" required="required">
+				<input type="file" class="form-control-file input" name="foto" id="foto1" required>
 			</div>
 			<input type="submit" value="Cadastrar" id="cadastro" class="btn btn-primary btn-sm btn-rounded font-weight-bold mb-2 mt-2 w-100">
 
