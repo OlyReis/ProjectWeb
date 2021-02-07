@@ -88,6 +88,9 @@ include("conexao.php");
     </div>
   </div>
 </div>
+<a href="index.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold" style="margin-left: 200px; margin-top: 50px; margin-bottom: 50px;">Cadastrar Concorrentes</button></a>
+<a href="listar.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold" style="margin-left: 10px; margin-top: 50px; margin-bottom: 50px;">Listar Concorrentes</button></a>
+<a href="votacao.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold" style="margin-left: 10px;">Votação</button></a>
 
 <script type="text/javascript">
   $(".progress").each(function() {
