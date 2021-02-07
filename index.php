@@ -34,6 +34,8 @@ include("conexao.php");
 		
 	</div>
 	<a href="listar.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold ">Listar Concorrentes</button></a>
-	<a href="votacao.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold">Iniciar Votação</button></a>
+	<a href="votacao.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold">Editar Concorrente</button></a>
+	<a href="votacao.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold">Excluir Concorrente</button></a>
+	<a href="votacao.php"><button class="btn btn-primary btn-sm btn-rounded font-weight-bold ml-4">Iniciar Votação</button></a>
 </body>
 </html>
