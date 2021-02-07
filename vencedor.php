@@ -19,7 +19,7 @@ include("conexao.php");
         <h4 class="border rounded-circle" style="padding: 6px;  margin-right: 100px; background-color: #DCDCDC;" align="center">2º</h4>
       </div>
       <div class="col" >
-        <img src="img/crown_icon.png" style="width: 100px; margin-left: 150px; margin-top: 40px;">
+        <img src="img/crownicon.png" style="width: 100px; margin-left: 150px; margin-top: 40px;">
       </div>
       <div class="col" style="margin-left: 230px; margin-top: 100px;">
         <h4 class="border rounded-circle" style="padding: 6px; margin-right: 100px; background-color: #DCDCDC" align="center">3º</h4>
