@@ -61,12 +61,14 @@ include("conexao.php");
 
 		<div id="page-content-wrapper">
 			<div class="container-fluid">
-				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><div class="div-menu-toggle">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</div></a>
-				<h1 align="center" class="mb-4">Lista de Concorrentes</h1>
+				<div class="nav border-bottom" style="margin: -15px 0 0 -35px; width: auto;">
+					<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><div class="div-menu-toggle">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div></a>
+				</div>
+				<h1 align="center" class="mb-4 mt-4">Lista de Concorrentes</h1>
 				<div class="row-mb-5" style="display: inline-flex;">
 					<div class="col-sm-4">
 						<div class="card">
