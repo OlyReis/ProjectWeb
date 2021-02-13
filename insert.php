@@ -12,8 +12,12 @@ function inserir($conexao, $dad, $destino){
 		echo "<br><br>";
 		echo $script;
 		echo "<br>";
+		echo '<script>alert("Cadastro incorreto!")</script>';
+		echo '<script>window.location="index.php"</script>';
 	}else{
 		echo "<br>Inserção Realizada corretamente!";
+		echo '<script>alert("Cadastro feito com sucesso!")</script>';
+		echo '<script>window.location="index.php"</script>';
 	}
 }
 
