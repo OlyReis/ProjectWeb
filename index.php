@@ -59,12 +59,14 @@ include("conexao.php");
 		</div>
 		<div id="page-content-wrapper">
 			<div class="container-fluid">
-				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><div class="div-menu-toggle">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</div></a>
-				<h1 align="center" class="mb-4">Big Rapper Brasil</h1>
+				<div class="nav border-bottom" style="margin: -15px 0 0 -35px; width: auto;">
+					<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><div class="div-menu-toggle">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div></a>
+				</div>
+				<h1 align="center" class="mb-4 mt-4">Big Rapper Brasil</h1>
 				<div class="container col-12 divcadastro rounded border border-primary mb-5">
 					<form name="tTeste" action="insert.php" method="POST" enctype="multipart/form-data" class="ml-2 mr-2">
 
@@ -79,7 +81,7 @@ include("conexao.php");
 						<label form="labelFoto" class="mt-2 mb-0">Foto do concorrente:</label>
 						<input type="file" class="form-control-file input mb-3" name="foto" required="">
 
-						<input type="submit" value="Cadastrar" id="cadastro" class="btn btn-primary btn-sm btn-rounded font-weight-bold mb-0 mt-3 ">
+						<input type="submit" value="Cadastrar" id="cadastro" class="btn btn-primary btn-sm btn-rounded font-weight-bold mb-3 mt-3 ">
 
 					</form> 
 
