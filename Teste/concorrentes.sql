@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `concorrentes`
 --
 
+DROP TABLE concorrentes;
 CREATE TABLE `concorrentes` (
   `id` int(11) NOT NULL,
   `nome` varchar(300) NOT NULL,

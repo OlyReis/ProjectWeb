@@ -27,4 +27,6 @@ move_uploaded_file($file['tmp_name'], $destino);
 
 inserir($conexao,$dad,$destino);
 
+header('Location: /ProjectWeb/index.php');
+
  ?>
