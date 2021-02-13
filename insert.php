@@ -1,20 +1,9 @@
-<<?php 
+<?php 
 include("conexao.php");
-
-$dad= array ($_POST['nome'],$_POST['musica']);
-
-$dir="img/";
-
-$file=$_FILES['foto'];
-
-$destino="$dir".$file["name"];
-
-move_uploaded_file($file['tmp_name'], $destino);
-
 
 function inserir($conexao, $dad, $destino){
 	
-	$script = 'INSERT INTO concorrentes VALUES (DEFAULT, "' . $dad[0] . '", "' . $dad[1] . '", "' . $destino . '", 0)';
+	$script = 'INSERT INTO concorrentes VALUES (DEFAULT, "' . $dad[0] . '", "' . $dad[1] . '", "' . $destino . '",' . 0 . ')';
 
 	$insere = $conexao->query($script);
 	if(!$insere){
@@ -28,9 +17,14 @@ function inserir($conexao, $dad, $destino){
 	}
 }
 
+
+$dad = array($_POST['nome'], $_POST['musica']);
+$dir= "img/";
+$file= $_FILES['foto'];
+$destino= "$dir".$file["name"];
+
+move_uploaded_file($file['tmp_name'], $destino);
+
 inserir($conexao,$dad,$destino);
-
-header('Location: /ProjectWeb/index.php');
-
 
  ?>
