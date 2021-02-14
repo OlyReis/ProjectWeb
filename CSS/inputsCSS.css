@@ -1,0 +1,9 @@
+.input {
+  border: 2px solid;
+  border-image-source: linear-gradient(45deg, #007bff, rgba(247,247,247,1));
+  border-image-slice: 1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
