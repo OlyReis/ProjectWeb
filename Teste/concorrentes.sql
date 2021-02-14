@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Fev-2021 às 15:59
+-- Tempo de geração: 14-Fev-2021 às 21:40
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.4.8
 
@@ -40,11 +40,11 @@ CREATE TABLE `concorrentes` (
 --
 
 INSERT INTO `concorrentes` (`id`, `nome`, `musica`, `foto`, `votos`) VALUES
-(3, 'Christhian YES', 'MUSICA FODA DEMAIS PRA CARALHO', 'img/fodase.jpg', 0),
-(4, 'DEU CERTO AI O', 'YES DEU CERTINHO', 'img/astronauta.jpg', 10),
-(5, 'John Fredd', 'You Ghost', 'img/pinguim.png', 19),
-(7, 'Fierot', 'Joker Mass', 'img/flores.png', 0),
-(8, 'Joieler', 'Houser', 'img/olho.jpg', 0);
+(1, 'Christhian YES', 'MUSICA FODA DEMAIS PRA CARALHO', 'img/fodase.jpg', 0),
+(2, 'DEU CERTO AI O', 'YES DEU CERTINHO', 'img/astronauta.jpg', 10),
+(3, 'John Fredd', 'You Ghost', 'img/pinguim.png', 19),
+(4, 'Fierotic', 'Jaker Ball', 'img/jupiter.jpg', 0),
+(5, 'Joieler', 'Houser', 'img/olho.jpg', 0);
 
 --
 -- Índices para tabelas despejadas
