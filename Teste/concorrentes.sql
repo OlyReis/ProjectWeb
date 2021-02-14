@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Fev-2021 às 03:12
+-- Tempo de geração: 14-Fev-2021 às 02:47
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.4.8
 
@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `concorrentes`
 --
 
-DROP TABLE concorrentes;
 CREATE TABLE `concorrentes` (
   `id` int(11) NOT NULL,
   `nome` varchar(300) NOT NULL,
@@ -42,7 +41,8 @@ CREATE TABLE `concorrentes` (
 
 INSERT INTO `concorrentes` (`id`, `nome`, `musica`, `foto`, `votos`) VALUES
 (3, 'Christhian YES', 'MUSICA FODA DEMAIS PRA CARALHO', 'img/fodase.jpg', 0),
-(4, 'DEU CERTO AI O', 'YES DEU CERTINHO', 'img/astronauta.jpg', 0);
+(4, 'DEU CERTO AI O', 'YES DEU CERTINHO', 'img/astronauta.jpg', 10),
+(5, 'John Fredd', 'You Ghost', 'img/pinguim.png', 19);
 
 --
 -- Índices para tabelas despejadas
@@ -62,7 +62,7 @@ ALTER TABLE `concorrentes`
 -- AUTO_INCREMENT de tabela `concorrentes`
 --
 ALTER TABLE `concorrentes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
