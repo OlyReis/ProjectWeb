@@ -77,9 +77,8 @@ include("conexao.php");
 								<h4 class="card-titile"> Nome</h4>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Musica do concorrente</li>
-								<li class="list-group-item"> id </li>
-								<li class="list-group-item"> votos </li>
+								<li class="list-group-item">Musica de referência:</li>
+								<li class="list-group-item">Votos: 0</li>
 							</ul>
 						</div>
 					</div>
@@ -91,9 +90,8 @@ include("conexao.php");
 								<h4 class="card-titile"> Nome</h4>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Musica do concorrente</li>
-								<li class="list-group-item"> id </li>
-								<li class="list-group-item"> votos </li>
+								<li class="list-group-item">Musica de referência:</li>
+								<li class="list-group-item">Votos: 0</li>
 							</ul>
 						</div>
 					</div>
@@ -105,9 +103,8 @@ include("conexao.php");
 								<h4 class="card-titile"> Nome</h4>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Musica do concorrente</li>
-								<li class="list-group-item"> id </li>
-								<li class="list-group-item"> votos </li>
+								<li class="list-group-item">Musica de referência:</li>
+								<li class="list-group-item">Votos: 0</li>
 							</ul>
 						</div>
 					</div>
