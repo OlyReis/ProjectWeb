@@ -98,10 +98,10 @@ include("conexao.php");
         if ($i == 3) {
           echo "</div>";
           echo "<div class='row-mb-5 mt-4' style='display: inline-flex;'>";
+          $i = 0;
         }
         if ($primeiraLinha == true) { echo "
-            <div class='row-mb-5 mt-4' style='display: inline-flex;'>";
-          $i = 0; 
+            <div class='row-mb-5 mt-4' style='display: inline-flex;'>"; 
         }
         ?>
               <div class="col-sm-4">
