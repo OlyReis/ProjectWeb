@@ -1,6 +1,7 @@
 <?php 
 include("conexao.php");
-
+$consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'SELECT * FROM concorrentes ORDER BY votos DESC LIMIT 1 OFFSET 1'));
+$somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma FROM concorrentes'));
 ?>
 
 <!DOCTYPE html>
@@ -71,12 +72,12 @@ include("conexao.php");
           <div class="col-sm-4">
             <h5 class="text-center" style="font-size: 76px; margin-left: 10%;">2º</h5>
             <div class="card">
-              <img class="card-img-top" src="img/294430.jpg" style="width: 100%; height: 210px;">
+              <img class="card-img-top" src="<?php echo $consulta['foto'] ; ?>" style="width: 100%; height: 210px;">
               <div class="card-body">
-                <h4 class="card-title mb-4" align="center"> Nome</h4>
-                <p class="card-text">Música de Referência: Música Foda</p>
+                <h4 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h4>
+                <p class="card-text">Música de Referência: <?php echo $consulta['musica'] ?></p>
                 <p align="center">Porcentagem de votos</p>
-                <div class="progress mx-auto" data-value='31'>
+                <div class="progress mx-auto" data-value="<?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, '.', '') ?>">
                   <span class="progress-left">
                     <span class="progress-bar border-primary"></span>
                   </span>
@@ -84,22 +85,26 @@ include("conexao.php");
                     <span class="progress-bar border-primary"></span>
                   </span>
                   <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">31<sup class="small">%</sup></div>
+                    <div class="h2 font-weight-bold"><?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, ',', '') ?><sup class="small">%</sup></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <?php 
+          $consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'Select * from concorrentes ORDER BY votos DESC LIMIT 1'));
+          ?>
 
           <div class="col-sm-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="display: block; margin-left: auto; margin-right: auto; width: 50%; margin-top: -10px; margin-bottom: 10px;"><path d="M3 16l-3-10 7.104 4 4.896-8 4.896 8 7.104-4-3 10h-18zm0 2v4h18v-4h-18z"/></svg>
             <div class="card border border-primary">
-              <img class="card-img-top" src="img/terra.jpg"style="width: 100%; height: 250px;">
+              <img class="card-img-top" src="<?php echo $consulta['foto'] ; ?>" style="width: 100%; height: 250px;">
               <div class="card-body">
-                <h4 class="card-title mb-4" align="center"> Nome</h4>
-                <p class="card-text">Música de Referência: Música Foda</p>
+                <h4 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h4>
+                <p class="card-text">Música de Referência: <?php echo $consulta['musica'] ?></p>
                 <p align="center">Porcentagem de votos</p>
-                <div class="progress mx-auto" data-value='38'>
+                <div class="progress mx-auto" data-value="<?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, '.', '') ?>">
                   <span class="progress-left">
                     <span class="progress-bar border-primary"></span>
                   </span>
@@ -107,22 +112,26 @@ include("conexao.php");
                     <span class="progress-bar border-primary"></span>
                   </span>
                   <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">38<sup class="small">%</sup></div>
+                    <div class="h2 font-weight-bold"><?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, ',', '') ?><sup class="small">%</sup></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <?php 
+          $consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'Select * from concorrentes ORDER BY votos DESC LIMIT 1 OFFSET 2'));
+          ?>
+
           <div class="col-sm-3">
             <h5 class="text-center" style="font-size: 76px; margin-left: 10%;">3º</h5>
             <div class="card">
-              <img class="card-img-top" src="img/tigre.jpg" style="width: 100%; height: 170px;">
+              <img class="card-img-top" src="<?php echo $consulta['foto'] ; ?>" style="width: 100%; height: 170px;">
               <div class="card-body">
-                <h4 class="card-title mb-4" align="center"> Nome</h4>
-                <p class="card-text">Música de Referência: Música Foda</p>
+                <h4 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h4>
+                <p class="card-text">Música de Referência: <?php echo $consulta['musica'] ?></p>
                 <p align="center">Porcentagem de votos</p>
-                <div class="progress mx-auto" data-value='24'>
+                <div class="progress mx-auto" data-value="<?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, '.', '') ?>">
                   <span class="progress-left">
                     <span class="progress-bar border-primary"></span>
                   </span>
@@ -130,7 +139,7 @@ include("conexao.php");
                     <span class="progress-bar border-primary"></span>
                   </span>
                   <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">24<sup class="small">%</sup></div>
+                    <div class="h2 font-weight-bold"><?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, ',', '') ?><sup class="small">%</sup></div>
                   </div>
                 </div>
               </div>
