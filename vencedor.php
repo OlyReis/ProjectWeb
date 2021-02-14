@@ -74,8 +74,8 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
             <div class="card">
               <img class="card-img-top" src="<?php echo $consulta['foto'] ; ?>" style="width: 100%; height: 210px;">
               <div class="card-body">
-                <h4 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h4>
-                <p class="card-text">Música de Referência: <?php echo $consulta['musica'] ?></p>
+                <h3 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h3>
+                <p class="card-text" style="font-weight: bold;">Música de Referência: <?php echo $consulta['musica'] ?></p>
                 <p align="center">Porcentagem de votos</p>
                 <div class="progress mx-auto" data-value="<?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, '.', '') ?>">
                   <span class="progress-left">
@@ -101,8 +101,8 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
             <div class="card border border-primary">
               <img class="card-img-top" src="<?php echo $consulta['foto'] ; ?>" style="width: 100%; height: 250px;">
               <div class="card-body">
-                <h4 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h4>
-                <p class="card-text">Música de Referência: <?php echo $consulta['musica'] ?></p>
+                <h3 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h3>
+                <p class="card-text" style="font-weight: bold;">Música de Referência: <?php echo $consulta['musica'] ?></p>
                 <p align="center">Porcentagem de votos</p>
                 <div class="progress mx-auto" data-value="<?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, '.', '') ?>">
                   <span class="progress-left">
@@ -128,8 +128,8 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
             <div class="card">
               <img class="card-img-top" src="<?php echo $consulta['foto'] ; ?>" style="width: 100%; height: 170px;">
               <div class="card-body">
-                <h4 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h4>
-                <p class="card-text">Música de Referência: <?php echo $consulta['musica'] ?></p>
+                <h3 class="card-title mb-4" align="center"><?php echo $consulta['nome']; ?></h3>
+                <p class="card-text" style="font-weight: bold;">Música de Referência: <?php echo $consulta['musica'] ?></p>
                 <p align="center">Porcentagem de votos</p>
                 <div class="progress mx-auto" data-value="<?php echo number_format($consulta['votos']*100/$somaVotos['soma'], 2, '.', '') ?>">
                   <span class="progress-left">
