@@ -58,6 +58,16 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
           </div></a>
         </div>
         <h1 align="center" class="mt-4" style="margin-bottom: 50px;">Big Rapper Brasil - Resultado</h1>
+  <?php 
+    $QUERY = "SELECT count(id) as quantidade FROM concorrentes";
+    $executa_query = mysqli_query($conexao, $QUERY);
+    $conta_linhas = mysqli_num_rows($executa_query);
+
+    if ($conta_linhas < 3) {
+      echo "Cadastre pelo menos 3 concorrentes para ver o resultado";
+      exit;
+    }
+  ?>
         <div class="row-mb-5" style="display: inline-flex;">
           <div class="col-sm-4">
             <h5 class="text-center" style="font-size: 76px; margin-left: 10%;">2º</h5>
