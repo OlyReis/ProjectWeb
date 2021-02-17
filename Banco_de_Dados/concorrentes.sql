@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Fev-2021 às 21:40
+-- Tempo de geração: 17-Fev-2021 às 20:51
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.4.8
 
@@ -40,11 +40,7 @@ CREATE TABLE `concorrentes` (
 --
 
 INSERT INTO `concorrentes` (`id`, `nome`, `musica`, `foto`, `votos`) VALUES
-(1, 'Christhian YES', 'MUSICA FODA DEMAIS PRA CARALHO', 'img/fodase.jpg', 0),
-(2, 'DEU CERTO AI O', 'YES DEU CERTINHO', 'img/astronauta.jpg', 10),
-(3, 'John Fredd', 'You Ghost', 'img/pinguim.png', 19),
-(4, 'Fierotic', 'Jaker Ball', 'img/jupiter.jpg', 0),
-(5, 'Joieler', 'Houser', 'img/olho.jpg', 0);
+(10, 'Djonga', 'Leal', 'img/Djonga.jpg', 0);
 
 --
 -- Índices para tabelas despejadas
@@ -64,7 +60,7 @@ ALTER TABLE `concorrentes`
 -- AUTO_INCREMENT de tabela `concorrentes`
 --
 ALTER TABLE `concorrentes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
