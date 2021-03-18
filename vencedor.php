@@ -59,10 +59,10 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
         </div>
         <h1 align="center" class="mt-4" style="margin-bottom: 50px;">Big Rapper Brasil - Resultado</h1>
   <?php 
-    $QUERY = "SELECT count(id) as quantidade FROM concorrente";
-    $consulta = $conexao->query($QUERY);
-    $totalConcorrentes =  $consulta->num_rows;
-    echo $totalConcorrentes;
+    $QUERY = "SELECT * FROM concorrente";
+    $executa_query = mysqli_query($conexao, $QUERY);
+    $totalConcorrentes = mysqli_num_rows($executa_query);
+
 
     if ($totalConcorrentes < 3) {
       echo "Cadastre pelo menos 3 concorrentes para ver o resultado";
