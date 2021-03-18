@@ -51,7 +51,7 @@ $id = $_GET['id'];
     </div>
 
     <?php 
-    $script = "SELECT * FROM concorrentes WHERE id = $id";
+    $script = "SELECT * FROM concorrente WHERE id = $id";
 
     $consulta = $conexao->query($script);
     echo "<br>";

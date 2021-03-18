@@ -1,7 +1,7 @@
 <?php 
 include("conexao.php");
-$consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'SELECT * FROM concorrentes ORDER BY votos DESC LIMIT 1 OFFSET 1'));
-$somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma FROM concorrentes'));
+$consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'SELECT * FROM concorrente ORDER BY votos DESC LIMIT 1 OFFSET 1'));
+$somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma FROM concorrente'));
 ?>
 
 <!DOCTYPE html>
@@ -59,11 +59,12 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
         </div>
         <h1 align="center" class="mt-4" style="margin-bottom: 50px;">Big Rapper Brasil - Resultado</h1>
   <?php 
-    $QUERY = "SELECT count(id) as quantidade FROM concorrentes";
-    $executa_query = mysqli_query($conexao, $QUERY);
-    $conta_linhas = mysqli_num_rows($executa_query);
+    $QUERY = "SELECT count(id) as quantidade FROM concorrente";
+    $consulta = $conexao->query($QUERY);
+    $totalConcorrentes =  $consulta->num_rows;
+    echo $totalConcorrentes;
 
-    if ($conta_linhas < 3) {
+    if ($totalConcorrentes < 3) {
       echo "Cadastre pelo menos 3 concorrentes para ver o resultado";
       exit;
     }
@@ -93,7 +94,7 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
           </div>
 
           <?php 
-          $consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'Select * from concorrentes ORDER BY votos DESC LIMIT 1'));
+          $consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'Select * from concorrente ORDER BY votos DESC LIMIT 1'));
           ?>
 
           <div class="col-sm-5">
@@ -120,7 +121,7 @@ $somaVotos = mysqli_fetch_assoc(mysqli_query($conexao,'SELECT SUM(votos) as soma
           </div>
 
           <?php 
-          $consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'Select * from concorrentes ORDER BY votos DESC LIMIT 1 OFFSET 2'));
+          $consulta = mysqli_fetch_assoc(mysqli_query($conexao, 'Select * from concorrente ORDER BY votos DESC LIMIT 1 OFFSET 2'));
           ?>
 
           <div class="col-sm-3">

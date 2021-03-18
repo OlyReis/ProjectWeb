@@ -3,7 +3,7 @@
 include("conexao.php");
 
 function atualizar ($conexao, $id, $votos) {
-  $script = 'UPDATE concorrentes SET votos = "' . $votos . '" WHERE id = ' . $id;
+  $script = 'UPDATE concorrente SET votos = "' . $votos . '" WHERE id = ' . $id;
 
   $atualizar = $conexao->query($script);
   if(!$atualizar){
@@ -13,10 +13,13 @@ function atualizar ($conexao, $id, $votos) {
     echo $script;
     echo "<br>";
     echo '<script>alert("Atualização incorreta!")</script>';
+    echo '<script>window.location="votacao.php"</script>';
+    
     
   }else{
     echo "<br>Atualização Realizada corretamente!";
     echo '<script>alert("Atualização feita com sucesso!")</script>';
+    echo '<script>window.location="votacao.php"</script>';
     
   }
 }

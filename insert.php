@@ -3,7 +3,7 @@ include("conexao.php");
 
 function inserir($conexao, $dad, $destino){
 	
-	$script = 'INSERT INTO concorrentes VALUES (DEFAULT, "' . $dad[0] . '", "' . $dad[1] . '", "' . $destino . '",' . 0 . ')';
+	$script = 'INSERT INTO concorrente VALUES (DEFAULT, "' . $dad[0] . '", "' . $dad[1] . '", "' . $destino . '",' . 0 . ')';
 
 	$insere = $conexao->query($script);
 	if(!$insere){

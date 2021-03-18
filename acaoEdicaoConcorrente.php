@@ -2,7 +2,7 @@
 include("conexao.php");
 
 function alterar ($conexao, $id, $nome, $musica, $destinoFoto) {
-  $script = 'UPDATE concorrentes SET nome = "' . $nome . '", musica = "' . $musica . '", foto = "' . $destinoFoto . '" WHERE id = ' . $id;
+  $script = 'UPDATE concorrente SET nome = "' . $nome . '", musica = "' . $musica . '", foto = "' . $destinoFoto . '" WHERE id = ' . $id;
 
   $altera = $conexao->query($script);
   if(!$altera){

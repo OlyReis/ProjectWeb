@@ -49,7 +49,7 @@
     </div>
 
     <?php
-        $script = "SELECT * FROM concorrentes";
+        $script = "SELECT * FROM concorrente";
 
         $consulta = $conexao->query($script);
         echo "<br>";
