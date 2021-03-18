@@ -1,8 +1,8 @@
 <?php
 include("conexao.php");
 
-function deletar ($conexao, $id, $nome, $musica, $destinoFoto) {
-  $script = 'DELETE concorrente SET nome = "' . $nome . '", musica = "' . $musica . '", foto = "' . $destinoFoto . '" WHERE id = ' . $id;
+function deletar ($conexao, $id) {
+  $script = 'DELETE FROM concorrente WHERE id = "' . $id . '"';
 
   $deleta = $conexao->query($script);
   if(!$deleta){
@@ -12,25 +12,15 @@ function deletar ($conexao, $id, $nome, $musica, $destinoFoto) {
     echo $script;
     echo "<br>";
     echo '<script>alert("Deleção incorreta!")</script>';
-    echo '<script>window.location="editar.php"</script>';
+    //echo '<script>window.location="listar.php"</script>';
   }else{
     echo "<br>Deleção Realizada corretamente!";
-    echo '<script>alert("Alteração feita com sucesso!")</script>';
-    echo '<script>window.location="editar.php"</script>';
+    echo '<script>alert("Deleção feita com sucesso!")</script>';
+    echo '<script>window.location="listar.php"</script>';
   }
   
 }
-
-$id = $_POST['id'];
-$nome = $_POST['nome'];
-$musica = $_POST['musica'];
-$dir= "img/";
-$file= $_FILES['foto'];
-$destinoFoto= "$dir".$file["name"];
+$id = $_GET['id'];
 echo $id;
-
-
-move_uploaded_file($file['tmp_name'], $destinoFoto);
-
-deletar($conexao, $id, $nome, $musica, $destinoFoto);
+deletar($conexao, $id);
 ?>
