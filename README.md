@@ -16,12 +16,12 @@ Sistema de competição entre maiores rappers do Brasil. O projeto foi desenvolv
 ## Layout
 
 Tela de Cadastro
-<img src="https://github.com/RicksonRocha/teste/blob/main/img/paginaCadastro.png" width="100%" />
+<img src="https://github.com/OlyReis/ProjectWeb/blob/d6462d5fff488ea33e76973428ddf3a0fa777fea/img/paginaCadastro.png" width="100%" />
 Cadastrando Rapper
-<img src="https://github.com/RicksonRocha/teste/blob/main/img/paginaCadastro2.png" width="100%" />
+<img src="https://github.com/OlyReis/ProjectWeb/blob/d6462d5fff488ea33e76973428ddf3a0fa777fea/img/paginaCadastro2.png" width="100%" />
 Listando Rappers Cadastrados
-<img src="https://github.com/RicksonRocha/teste/blob/main/img/paginaListaConcorrentes.png" width="100%" />
+<img src="https://github.com/OlyReis/ProjectWeb/blob/d6462d5fff488ea33e76973428ddf3a0fa777fea/img/paginaListaConcorrentes.png" width="100%" />
 Página de Votação
-<img src="https://github.com/RicksonRocha/teste/blob/main/img/paginaVota%C3%A7%C3%A3o.png" width="100%" />
+<img src="https://github.com/OlyReis/ProjectWeb/blob/d6462d5fff488ea33e76973428ddf3a0fa777fea/img/paginaVota%C3%A7%C3%A3o.png" width="100%" />
 Página dos vencedores
-<img src="https://github.com/RicksonRocha/teste/blob/main/img/paginaVerVencedores.png" width="100%" />
+<img src="https://github.com/OlyReis/ProjectWeb/blob/d6462d5fff488ea33e76973428ddf3a0fa777fea/img/paginaVerVencedores.png" width="100%" />
